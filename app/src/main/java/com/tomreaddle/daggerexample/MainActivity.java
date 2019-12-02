@@ -4,19 +4,21 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import javax.inject.Inject;
+
 public class MainActivity extends AppCompatActivity {
 
-    Car car;
-    TextView text;
+    @Inject Car car;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        text = findViewById(R.id.text);
 
         CarComponent carComponent = DaggerCarComponent.create();
-        car = carComponent.getCar();
-        text.setText(car.drive());
+        carComponent.inject(this);
+
+        car.drive();
+        //car = carComponent.getCar();
     }
 }
