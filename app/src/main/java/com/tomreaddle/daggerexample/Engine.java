@@ -2,10 +2,9 @@ package com.tomreaddle.daggerexample;
 
 import javax.inject.Inject;
 
-public class Engine {
-    private static final String TAG = "Car";
+public interface Engine {
 
-    @Inject
-    public Engine() {
-    }
+    void start();
+
+
 }
