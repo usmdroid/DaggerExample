@@ -14,6 +14,6 @@ public class DeiselEngine implements Engine {
 
     @Override
     public void start() {
-        Log.d(TAG, "Deisel engine started");
+        Log.d(TAG, "Diesel engine started");
     }
 }

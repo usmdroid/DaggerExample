@@ -11,6 +11,7 @@ public class Car {
 
     @Inject
     public Car(Engine engine, Wheels wheels) {
+        this.engine = engine;
         this.wheels = wheels;
     }
 
