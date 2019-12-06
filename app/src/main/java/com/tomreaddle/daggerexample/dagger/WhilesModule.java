@@ -1,4 +1,8 @@
-package com.tomreaddle.daggerexample;
+package com.tomreaddle.daggerexample.dagger;
+
+import com.tomreaddle.daggerexample.car.Rims;
+import com.tomreaddle.daggerexample.car.Tires;
+import com.tomreaddle.daggerexample.car.Wheels;
 
 import dagger.Module;
 import dagger.Provides;

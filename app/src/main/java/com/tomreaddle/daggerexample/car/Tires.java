@@ -1,8 +1,8 @@
-package com.tomreaddle.daggerexample;
+package com.tomreaddle.daggerexample.car;
 
 import android.util.Log;
 
-class Tires {
+public class Tires {
     private static final String TAG = "Car";
 
     public void inflate() {

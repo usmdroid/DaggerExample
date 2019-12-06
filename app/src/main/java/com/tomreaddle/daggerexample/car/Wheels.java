@@ -1,4 +1,4 @@
-package com.tomreaddle.daggerexample;
+package com.tomreaddle.daggerexample.car;
 
 public class Wheels {
     private static final String TAG = "Car";

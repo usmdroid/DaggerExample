@@ -1,14 +1,17 @@
-package com.tomreaddle.daggerexample;
+package com.tomreaddle.daggerexample.dagger;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.TextView;
+
+import com.tomreaddle.daggerexample.R;
+import com.tomreaddle.daggerexample.car.Car;
 
 import javax.inject.Inject;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Inject Car car;
+    @Inject
+    Car car;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,4 +1,4 @@
-package com.tomreaddle.daggerexample;
+package com.tomreaddle.daggerexample.car;
 import android.util.Log;
 
 import javax.inject.Inject;
